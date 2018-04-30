@@ -8,7 +8,7 @@
  * @see         https://github.com/christianbarkowsky/contao-privacyconsent-bundle
  */
 
-namespace Contao\PrivacyConsentBundle\ContaoManager;
+namespace Brkwsky\PrivacyConsentBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
