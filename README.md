@@ -3,6 +3,7 @@
 ## About
 Adds a privacy policy consent checkbox to the registration
 
+![](docs/screenshot.png)
 
 ## Copyright
 
