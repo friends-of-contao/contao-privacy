@@ -1,0 +1,3 @@
+services:
+    brkwsky_privacy.listener.member_operation:
+      class: Brkwsky\PrivacyConsentBundle\EventListener\MemberListener
