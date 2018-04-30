@@ -26,7 +26,10 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(BrkwskyPrivacyConsentBundle::class)->setLoadAfter([ContaoCoreBundle::class]),
+            BundleConfig::create('Brkwsky\PrivacyConsentBundle\BrkwskyPrivacyConsentBundle')
+                ->setLoadAfter([
+                    'Contao\CoreBundle\ContaoCoreBundle'
+                ])
         ];
     }
 }
