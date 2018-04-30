@@ -1,0 +1,32 @@
+{
+  "name": "christianbarkowsky/contao-privacyconsent-bundle",
+  "description": "Contao bundle that adds a privacy policy consent checkbox to the registration",
+  "keywords":["privacy", "Datenschutz", "DSGVO", "registration", "policy"],
+  "type": "contao-bundle",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Christian Barkowsky",
+      "homepage": "https://christianbarkowsky.de/"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/christianbarkowsky/contao-privacyconsent-bundle/issues",
+    "source": "https://github.com/christianbarkowsky/contao-privacyconsent-bundle"
+  },
+  "require": {
+    "php": "^7.0",
+    "contao/core-bundle": "^4.4"
+  },
+  "conflict": {
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Brkwsky\\PrivacyConsentBundle\\": "src"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "Brkwsky\\PrivacyConsentBundle\\ContaoManager\\Plugin"
+  }
+}
