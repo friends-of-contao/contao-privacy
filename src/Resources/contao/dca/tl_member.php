@@ -21,6 +21,6 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['privacyConsent'] = array
     'label'                   => &$GLOBALS['TL_LANG']['tl_member']['privacyConsent'],
     'exclude'                 => true,
     'inputType'               => 'checkbox',
-    'eval'                    => array('mandatory'=>true, 'feEditable'=>true, 'feViewable'=>true, 'feGroup'=>'contact'),
+    'eval'                    => array('mandatory'=>true, 'feEditable'=>false, 'feViewable'=>true, 'feGroup'=>'contact'),
     'sql'                     => "char(1) NOT NULL default ''"
 );
