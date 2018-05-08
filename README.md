@@ -30,7 +30,7 @@ This project has been created and is maintained by [friends-of-contao](https://g
 
 [frontendschlampe](https://github.com/frontendschlampe) - [hofff.com](https://www.hofff.com) - donating ideas and management tasks
 
-Markus Peltzer - [twobox.com](http://www.twobox.com) - donating 50 € net
+[Pellinger](https://github.com/Pellinger) - [twobox.com](http://www.twobox.com) - donating 50 € net
 
 If you want to extend the list, feel free to send us an [email](mailto:nick@hofff.com).
 
