@@ -1,5 +1,5 @@
 {
-  "name": "christianbarkowsky/contao-privacyconsent-bundle",
+  "name": "friends-of-contao/contao-privacy",
   "description": "Contao bundle that adds a privacy policy consent checkbox to the registration",
   "keywords":["privacy", "Datenschutz", "DSGVO", "registration", "policy"],
   "type": "contao-bundle",
@@ -11,8 +11,8 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/christianbarkowsky/contao-privacyconsent-bundle/issues",
-    "source": "https://github.com/christianbarkowsky/contao-privacyconsent-bundle"
+    "issues": "https://github.com/friends-of-contao/contao-privacy/issues",
+    "source": "https://github.com/friends-of-contao/contao-privacy"
   },
   "require": {
     "php": "^7.0",
