@@ -8,6 +8,10 @@
     {
       "name": "Christian Barkowsky",
       "homepage": "https://christianbarkowsky.de/"
+    },
+    {
+      "name": "Mathias Arzberger",
+      "homepage": "https://pdir.de/"
     }
   ],
   "support": {
@@ -23,10 +27,10 @@
   },
   "autoload": {
     "psr-4": {
-      "Brkwsky\\PrivacyConsentBundle\\": "src"
+      "Foc\\ContaoPrivacyBundle\\": "src"
     }
   },
   "extra": {
-    "contao-manager-plugin": "Brkwsky\\PrivacyConsentBundle\\ContaoManager\\Plugin"
+    "contao-manager-plugin": "Foc\\ContaoPrivacyBundle\\ContaoManager\\Plugin"
   }
 }

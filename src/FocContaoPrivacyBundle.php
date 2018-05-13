@@ -8,7 +8,14 @@
  * @see         https://github.com/friends-of-contao/contao-privacy
  */
 
+namespace Foc\ContaoPrivacyBundle;
+
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
 /**
- * Fields
+ * Class BrkwskyContaoPrivacy
+ * @package Foc\ContaoPrivacy
  */
-$GLOBALS['TL_LANG']['tl_member']['privacyConsent'] = ['Datenschutz Checkbox', '-'];
+class FocContaoPrivacyBundle extends Bundle
+{
+}
