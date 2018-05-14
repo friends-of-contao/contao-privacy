@@ -14,6 +14,30 @@ Adds a privacy policy consent checkbox to the registration
 
 ![](docs/screenshot.png)
 
+### Hook
+
+The addPrivacyWidget hook is executed when a user opens the privacy overview page in backend.
+Extension developers can simply add informations to the overview page.
+
+    // config.php
+    $GLOBALS['TL_HOOKS']['addPrivacyWidget'][] = array('MyClass', 'myAddPrivacyWidget');
+
+    // MyClass.php
+    public function myAddPrivacyWidget($arrWidgets)
+    {
+        // Any Code
+    }
+
+Example data for widget
+
+        $arrWidgets[] = array(
+            'title' => 'friends-of-contao/contao-privacy',
+            'content' => 'Es werden keine datenschutzrelevanten Informationen erhoben.',
+            'class' => 'green icon'
+        );
+
+You can use green, red, orange and gray in widget class for highlighting.
+
 ## Copyright
 
 This project has been created and is maintained by [friends-of-contao](https://github.com/friends-of-contao)

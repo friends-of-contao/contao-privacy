@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Privacy Overview in contao-privacy for Contao Open Source CMS
+ * Privacy Overview for ContaoPrivacy
  *
- * @copyright   pdir GmbH 2018 <https://pdir.de>
+ * @copyright   Friends of Contao 2018
  * @author      Mathias Arzberger <https://pdir.de>
  * @package     ContaoPrivacy
  * @license     LGPL-3.0+
@@ -29,6 +29,9 @@ class PrivacyOverview extends \BackendModule
      */
     protected function compile()
     {
+        /* list available root pages */
+        $this->Template->rootPages = $this->getActiveRootPages();
+
         /* @todo add scan actions for external scripts, fonts ... */
 
 
@@ -72,5 +75,31 @@ class PrivacyOverview extends \BackendModule
         {
             $this->Template->widgets = $strWidgets;
         }
+    }
+
+    function getActiveRootPages() {
+
+        $strHtml = '';
+
+        $pageModel = new \Contao\PageModel();
+        $pages = $pageModel->findPublishedRootPages();
+
+        while ($pages->next()){
+
+            /** @var PageModel $pages */
+            $objRow = $pages->current();
+
+            $strHtml .= '<strong>';
+            $strHtml .= $objRow->title . ' ['.$objRow->language.']</strong> - ';
+            $strHtml .= $objRow->dns ? $objRow->dns : ' Domain nicht angegeben' . '<br>';
+            $strHtml .= '<span>SSL - Verschlüsselte Verbindung via https: ';
+            $strHtml .= $objRow->useSSL ? 'Ja' : 'Nein';
+            $strHtml .= '</span>';
+
+            // other page options
+
+        }
+
+        return $strHtml;
     }
 }

@@ -6,7 +6,9 @@
 <div class="tl_listing_container privacy-overview">
 
     <h2 class="sub_headline sub_headline_index">Contao Einstellungen und Logfiles</h2>
-    <p class="tl_new">Wird in einer der nächsten Versionen verfügbar sein.</p>
+    <div>
+        <?= $this->rootPages; ?>
+    </div>
 
     <h2 class="sub_headline sub_headline_index">Einbindung von Inhalten Dritter auf der Webseite</h2>
     <p class="tl_info">Dieser Bereich enthält Information zu eingesetzten Drittanbieter Scripten die beim Scan Ihrer aktuellen Webseite ermittelt wurden.</p>
@@ -38,7 +40,7 @@
     <p class="tl_new">Wird in einer der nächsten Versionen verfügbar sein.</p> */ ?>
 
     <h2 class="sub_headline sub_headline_index">Erweiterungen</h2>
-    <p class="tl_info">Dieser Bereich enthält Infromationen die durch die installierten Erweiterungen bereitgestellt werden.</p>
+    <p class="tl_info">Dieser Bereich enthält Informationen die durch die installierten Erweiterungen bereitgestellt werden.</p>
     <div class="privacy-widgets">
         <ul class="tl_listing tl_tree_xtnd">
             <?= $this->widgets ?>

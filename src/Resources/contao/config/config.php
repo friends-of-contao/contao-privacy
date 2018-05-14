@@ -1,9 +1,9 @@
 <?php
 
 /**
- * contao-privacy for Contao Open Source CMS
+ * ContaoPrivacy for Contao Open Source CMS
  *
- * @copyright   pdir GmbH 2018 <https://pdir.de>
+ * @copyright   Friends of Contao 2018
  * @author      Mathias Arzberger <https://pdir.de>
  * @package     ContaoPrivacy
  * @license     LGPL-3.0+

@@ -1,12 +1,21 @@
 
+.privacy-overview {
+  line-height: 1.2em;
+}
+
 .privacy-overview h2 {
   margin-top: 30px;
 }
 
 .privacy-overview ul,
-.privacy-overview p {
-  margin-left: 12px;
+.privacy-overview p,
+.privacy-overview > div {
+  margin-left: 18px;
   margin-top: 10px;
+}
+
+.privacy-overview > div > span {
+  margin-left: 10px;
 }
 
 .privacy-overview ul li {
