@@ -30,7 +30,7 @@ array_insert($GLOBALS['BE_MOD']['foc'], 0, array
 /**
  * Front end modules
  */
-$GLOBALS['FE_MOD']['miscellaneous']['analyticsOptOut'] = 'Brkwsky\PrivacyConsentBundle\Modules\AnalyticsOptOut';
+$GLOBALS['FE_MOD']['miscellaneous']['analyticsOptOut'] = 'Foc\ContaoPrivacyBundle\Modules\AnalyticsOptOut';
 
 /**
  * Content elements
