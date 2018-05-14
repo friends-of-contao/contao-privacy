@@ -1,0 +1,24 @@
+
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+
+  <?php if ($this->videoSplash): ?>
+    <figure id="videoSplash<?= $this->id ?>" class="image_container" data-video="<?= $this->src ?>">
+      <?php $this->insert('picture_default', $this->splashImage->picture); ?>
+    </figure>
+    <script>
+      document.getElementById('videoSplash<?= $this->id ?>').addEventListener('click', function(e) {
+        var iframe = document.createElement('iframe');
+        iframe.src = this.dataset['video'];
+        iframe.width = <?= $this->width; ?>;
+        iframe.height = <?= $this->height; ?>;
+        iframe.allowfullscreen = '';
+        this.parentNode.replaceChild(iframe, this);
+      });
+    </script>
+  <?php else: ?>
+    <iframe<?= $this->size ?> src="<?= $this->src ?>" allowfullscreen></iframe>
+  <?php endif; ?>
+
+<?php $this->endblock(); ?>

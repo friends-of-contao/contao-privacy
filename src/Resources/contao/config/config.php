@@ -1,9 +1,6 @@
 <?php
 
 /**
-<<<<<<< HEAD
- * ContaoPrivacy for Contao Open Source CMS
- *
  * @copyright   Friends of Contao 2018
  * @author      Mathias Arzberger <https://pdir.de>
  * @author      Fritz Michael Gschwantner <https://github.com/fritzmg>
@@ -14,7 +11,7 @@
 
 $assetsDir = 'bundles/foccontaoprivacy';
 
-/*
+/**
  * Backend modules
  */
 
@@ -33,3 +30,9 @@ array_insert($GLOBALS['BE_MOD']['foc'], 0, array
  * Front end modules
  */
 $GLOBALS['FE_MOD']['miscellaneous']['analyticsOptOut'] = 'Brkwsky\PrivacyConsentBundle\Modules\AnalyticsOptOut';
+
+/**
+ * Content elements
+ */
+$GLOBALS['TL_CTE']['media']['youtube'] = 'Brkwsky\PrivacyConsentBundle\Elements\YouTube';
+$GLOBALS['TL_CTE']['media']['vimeo'] = 'Brkwsky\PrivacyConsentBundle\Elements\Vimeo';
