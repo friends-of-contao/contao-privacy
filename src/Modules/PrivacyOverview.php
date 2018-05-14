@@ -51,7 +51,7 @@ class PrivacyOverview extends \BackendModule
             foreach ($GLOBALS['TL_HOOKS']['addPrivacyWidget'] as $callback)
             {
                 $this->import($callback[0]);
-                $arrWidgets = $this->$callback[0]->$callback[1]($arrWidgets);
+                $arrWidgets = $this->{$callback[0]}->{$callback[1]}($arrWidgets);
             };
         }
 
