@@ -1,0 +1,5 @@
+<li class="cp-widget <?= $this->widgetClass; ?>">
+    <?= $this->widgetTitle; ?>
+    <br>
+    <?= $this->widgetContent; ?>
+</li>

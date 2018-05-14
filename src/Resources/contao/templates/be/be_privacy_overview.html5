@@ -1,0 +1,60 @@
+<?php /* use globals to load some css and js */ ?>
+<?php #$GLOBALS['TL_CSS'][''] = ''; ?>
+<?php #$GLOBALS['TL_JAVASCRIPT'][''] = ''; ?>
+<?php #$GLOBALS['TL_BODY'][''] = ''; ?>
+
+<div class="tl_listing_container privacy-overview">
+
+    <h2 class="sub_headline sub_headline_index">Contao Einstellungen und Logfiles</h2>
+    <div>
+        <?= $this->rootPages; ?>
+    </div>
+
+    <h2 class="sub_headline sub_headline_index">Einbindung von Inhalten Dritter auf der Webseite</h2>
+    <p class="tl_info">Dieser Bereich enthält Information zu eingesetzten Drittanbieter Scripten die beim Scan Ihrer aktuellen Webseite ermittelt wurden.</p>
+    <p class="tl_new">Wird in einer der nächsten Versionen verfügbar sein.</p>
+    <p>Beispiele</p>
+    <ul class="tl_listing tl_tree_xtnd">
+        <li class="icon red">Bidswitch<br>Du benutzt Layout XY mit dem Template XY</li>
+        <li class="icon green">Facebook Connect<br> Facebook Connect wurde im Template XY.html5 gefunden.</li>
+        <li class="icon orange">Facebook Custom Audience</li>
+        <li class="icon grey">Google Fonts</li>
+        <li class="icon red">Youtube (Videos)<br> Du benutzt Youtube auf Seite A, B und C</li>
+
+        <?php /*
+        <li class="">Google Tag Manager</li>
+        <li class="">Google “Benutzerdefinierte Suche“</li>
+        <li class="">Google Maps</li>
+        <li class="">Google Maps mit Empfehlungskomponenten</li>
+        <li class="">social bookmarks</li>
+        <li class="">Vimeo (Videos)</li>
+        <li class="">YouTube (Videos)</li>
+        <li class="">Einsatz von Getty Images Bildern</li>
+        <li class="">Einsatz des Zählpixels Verwertungsgesellschaft WORT (VG WORT)</li>
+        <li class="">jQuery</li> */ ?>
+    </ul>
+
+    <?php /*
+    <h3 class="sub_headline sub_headline_index">Andere:</h3>
+    <teaxarea placeholder="Hier können Sie eigene Erweiterungen oder Drittanbieter Inhalte angeben."></teaxarea>
+    <p class="tl_new">Wird in einer der nächsten Versionen verfügbar sein.</p> */ ?>
+
+    <h2 class="sub_headline sub_headline_index">Erweiterungen</h2>
+    <p class="tl_info">Dieser Bereich enthält Informationen die durch die installierten Erweiterungen bereitgestellt werden.</p>
+    <div class="privacy-widgets">
+        <ul class="tl_listing tl_tree_xtnd">
+            <?= $this->widgets ?>
+        </ul>
+    </div>
+
+    <h2 class="sub_headline sub_headline_index">Export</h2>
+    <p class="tl_new">Wird in einer der nächsten Versionen verfügbar sein.</p>
+
+    <p>Legende:</p>
+    <ul class="tl_listing tl_tree_xtnd">
+        <li class="icon red">Erweiterung oder Script wurde gefunden - die aktuellen Einstellungen sind problematisch.</li>
+        <li class="icon green">Erweiterung oder Script wurde gefunden - die Verwendung sollte unproblematisch sein.</li>
+        <li class="icon orange">Erweiterung oder Script wurde gefunden - die aktuellen Einstellungen könnten problematisch sein.</li>
+        <li class="tl_grey icon grey">Status der Erweiterung oder Script unbekannt.</li>
+    </ul>
+</div>

@@ -1,14 +1,14 @@
 <?php
 
 /**
- * @copyright   Christian Barkowsky 2018 <https://brkwsky.de>
+ * @copyright   Friends of Contao 2018
  * @author      Christian Barkowsky <https://brkwsky.de>
- * @package     PrivacyConsentBundle
+ * @package     ContaoPrivacy
  * @license     LGPL-3.0+
- * @see         https://github.com/christianbarkowsky/contao-privacyconsent-bundle
+ * @see         https://github.com/friends-of-contao/contao-privacy
  */
 
-namespace Brkwsky\PrivacyConsentBundle\ContaoManager;
+namespace Foc\ContaoPrivacyBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
@@ -26,7 +26,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create('Brkwsky\PrivacyConsentBundle\BrkwskyPrivacyConsentBundle')
+            BundleConfig::create('Foc\ContaoPrivacyBundle\FocContaoPrivacyBundle')
                 ->setLoadAfter([
                     'Contao\CoreBundle\ContaoCoreBundle'
                 ])

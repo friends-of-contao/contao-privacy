@@ -1,14 +1,14 @@
 <?php
 
 /**
- * @copyright   Christian Barkowsky 2018 <https://brkwsky.de>
+ * @copyright   Friends of Contao 2018
  * @author      Christian Barkowsky <https://brkwsky.de>
- * @package     PrivacyConsentBundle
+ * @package     ContaoPrivacy
  * @license     LGPL-3.0+
- * @see         https://github.com/christianbarkowsky/contao-privacyconsent-bundle
+ * @see         https://github.com/friends-of-contao/contao-privacy
  */
 
-namespace Brkwsky\PrivacyConsentBundle\DependencyInjection;
+namespace Foc\ContaoPrivacyBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -18,7 +18,7 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 /**
  * Adds the bundle services to the container.
  */
-class BrkwskyPrivacyConsentExtension extends Extension
+class FocContaoPrivacyExtension extends Extension
 {
 
     /**

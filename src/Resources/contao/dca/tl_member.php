@@ -1,17 +1,17 @@
 <?php
 
 /**
- * @copyright   Christian Barkowsky 2018 <https://brkwsky.de>
+ * @copyright   Friends of Contao 2018
  * @author      Christian Barkowsky <https://brkwsky.de>
- * @package     PrivacyConsentBundle
+ * @package     ContaoPrivacy
  * @license     LGPL-3.0+
- * @see         https://github.com/christianbarkowsky/contao-privacyconsent-bundle
+ * @see         https://github.com/friends-of-contao/contao-privacy
  */
 
 /**
  * Config
  */
-$GLOBALS['TL_DCA']['tl_member']['config']['onload_callback'][] = array('brkwsky_privacy.listener.member_operation', 'onLoad');
+$GLOBALS['TL_DCA']['tl_member']['config']['onload_callback'][] = array('foc_privacy.listener.member_operation', 'onLoad');
 
 /**
  * Fields

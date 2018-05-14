@@ -1,0 +1,47 @@
+
+.privacy-overview {
+  line-height: 1.2em;
+}
+
+.privacy-overview h2 {
+  margin-top: 30px;
+}
+
+.privacy-overview ul,
+.privacy-overview p,
+.privacy-overview > div {
+  margin-left: 18px;
+  margin-top: 10px;
+}
+
+.privacy-overview > div > span {
+  margin-left: 10px;
+}
+
+.privacy-overview ul li {
+  padding: 3px 5px;
+}
+
+.privacy-overview ul li:before {
+  width: 10px;
+  height: 10px;
+  content: "";
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.privacy-overview ul li.green:before {
+  background-color: #589b0e;
+}
+
+.privacy-overview ul li.red:before {
+  background-color: darkred;
+}
+
+.privacy-overview ul li.orange:before {
+  background-color: orange;
+}
+
+.privacy-overview ul li.grey:before {
+  background-color: grey;
+}
