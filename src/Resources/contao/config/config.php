@@ -2,6 +2,7 @@
 
 /**
  * @copyright   Friends of Contao 2018
+ * @author      Christian Barkowsky <https://brkwsky.de>
  * @author      Mathias Arzberger <https://pdir.de>
  * @author      Fritz Michael Gschwantner <https://github.com/fritzmg>
  * @package     ContaoPrivacy
@@ -19,7 +20,7 @@ array_insert($GLOBALS['BE_MOD']['foc'], 0, array
 (
     'focPrivacyOverview' => array
     (
-        'callback' => 'Foc\ContaoPrivacyBundle\Module\PrivacyOverview',
+        'callback' => 'Foc\ContaoPrivacyBundle\Modules\PrivacyOverview',
         'icon' => $assetsDir . '/img/icon.png',
         // 'javascript'        =>  $assetsDir . '/js/backend.min.js',
         'stylesheet' => $assetsDir . '/css/privacyOverview.css'
@@ -34,5 +35,5 @@ $GLOBALS['FE_MOD']['miscellaneous']['analyticsOptOut'] = 'Brkwsky\PrivacyConsent
 /**
  * Content elements
  */
-$GLOBALS['TL_CTE']['media']['youtube'] = 'Brkwsky\PrivacyConsentBundle\Elements\YouTube';
-$GLOBALS['TL_CTE']['media']['vimeo'] = 'Brkwsky\PrivacyConsentBundle\Elements\Vimeo';
+$GLOBALS['TL_CTE']['media']['youtube'] = 'Foc\ContaoPrivacyBundle\Elements\YouTube';
+$GLOBALS['TL_CTE']['media']['vimeo'] = 'Foc\ContaoPrivacyBundle\Elements\Vimeo';

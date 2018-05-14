@@ -1,14 +1,14 @@
 <?php
 
 /**
- * @copyright   Christian Barkowsky 2018 <https://brkwsky.de>
+ * @copyright   Friends of Contao 2018
  * @author      Fritz Michael Gschwantner <https://github.com/fritzmg>
- * @package     PrivacyConsentBundle
+ * @package     ContaoPrivacy
  * @license     LGPL-3.0-or-later
  * @see         https://github.com/christianbarkowsky/contao-privacyconsent-bundle
  */
 
-namespace Brkwsky\PrivacyConsentBundle\Elements;
+namespace Foc\ContaoPrivacyBundle\Elements;
 
 use Contao\ContentVimeo;
 use Contao\FilesModel;

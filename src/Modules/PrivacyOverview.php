@@ -13,7 +13,7 @@
 /**
  * Namespace
  */
-namespace Foc\ContaoPrivacyBundle\Module;
+namespace Foc\ContaoPrivacyBundle\Modules;
 
 class PrivacyOverview extends \BackendModule
 {
