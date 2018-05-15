@@ -1,6 +1,6 @@
 <?php
 
-use Brkwsky\PrivacyConsentBundle\Modules\AnalyticsOptOut;
+use Foc\ContaoPrivacyBundle\Modules\AnalyticsOptOut;
 
 /**
  * To use this script, please fill in your Piwik site ID and Piwik URL below

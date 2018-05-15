@@ -16,6 +16,7 @@ use Contao\Input;
 use Contao\Module;
 use Contao\StringUtil;
 use Contao\System;
+use Patchwork\Utf8;
 
 /**
  * {@inheritdoc}
@@ -118,10 +119,12 @@ class AnalyticsOptOut extends Module
         if (Input::cookie(self::COOKIE_NAME))
         {
             $this->Template->slabel = StringUtil::specialchars($GLOBALS['TL_LANG']['MSC']['analyticsOptIn']);
+            $this->Template->optin = true;
         }
         else
         {
             $this->Template->slabel = StringUtil::specialchars($GLOBALS['TL_LANG']['MSC']['analyticsOptOut']);
+            $this->Template->optin = false;
         }
     }
 }
