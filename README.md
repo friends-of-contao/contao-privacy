@@ -38,6 +38,22 @@ Example data for widget
 
 You can use green, red, orange and gray in widget class for highlighting.
 
+### Analytics opt-out
+
+Provides an "opt-out" button via a front end module. This button simple sets (or removes) a `analyticsOptOut` cookie, which you can then use in your `analytics_*` templates like this for example:
+```php
+ <?php 
+
+use Foc\ContaoPrivacyBundle\Modules\AnalyticsOptOut;
+
+if (!BE_USER_LOGGED_IN && !$this->hasAuthenticatedBackendUser() && !\Input::cookie(AnalyticsOptOut::COOKIE_NAME)): ?>
+
+  <!-- your tracking script -->
+
+<?php endif; ?>
+```
+Optionally this module also allows you to remove all cookies for this domain, with the exception of some pre-defined cookies like the session cookie (if active) or a custom list of cookies to keep.
+
 ## Copyright
 
 This project has been created and is maintained by [friends-of-contao](https://github.com/friends-of-contao)
