@@ -7,11 +7,24 @@
   "authors": [
     {
       "name": "Christian Barkowsky",
-      "homepage": "https://christianbarkowsky.de/"
+      "homepage": "https://christianbarkowsky.de/",
+      "role": "Developer"
     },
     {
       "name": "Mathias Arzberger",
-      "homepage": "https://pdir.de/"
+      "homepage": "https://pdir.de/",
+      "role": "Developer"
+    },
+    {
+      "name": "Fritz Michael Gschwantner",
+      "homepage": "https://www.inspiredminds.at"
+      "role": "Developer",
+    },
+    {
+      "name": "Nicky Hoff",
+      "homepage": "https://www.hofff.com",
+      "email": "nick@hofff.com",
+      "role": "Manager"
     }
   ],
   "support": {
@@ -20,7 +33,7 @@
   },
   "require": {
     "php": "^7.0",
-    "contao/core-bundle": "^4.4"
+    "contao/core-bundle": "4.4.* || 4.5.*"
   },
   "conflict": {
     "contao/manager-plugin": "<2.0 || >=3.0"
