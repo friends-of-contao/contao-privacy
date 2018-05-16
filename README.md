@@ -16,7 +16,7 @@ Adds a privacy policy consent checkbox to the registration
 
 ### Hook
 
-The addPrivacyWidget hook is executed when a user opens the privacy overview page in backend.
+The `addPrivacyWidget` hook is executed when a user opens the privacy overview page in backend.
 Extension developers can simply add informations to the overview page.
 
     // config.php
@@ -46,7 +46,7 @@ We added an option for YouTube and Vimeo to add a splash image before loading th
 
 ### Analytics opt-out
 
-Provides an "opt-out" button via a front end module. This button simple sets (or removes) a `analyticsOptOut` cookie, which you can then use in your `analytics_*` templates like this for example:
+Provides an "opt-out" button via a front end module. This button simply sets (or removes) an `analyticsOptOut` cookie, which you can then use in your `analytics_*` templates (or anywhere else) like this for example:
 ```php
  <?php 
 
