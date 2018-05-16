@@ -12,7 +12,7 @@ We would be pleased, if you could help us with ideas, code snippets or maybe wit
 
 Adds a privacy policy consent checkbox to the registration
 
-![checkbox-registration](docs/checkbox-registration.png | width=150)
+<img src="docs/checkbox-registration.png" width="400">
 
 ### Hook
 
@@ -37,6 +37,12 @@ Example data for widget
         );
 
 You can use green, red, orange and gray in widget class for highlighting.
+
+### Video Splash Image for YouTube and Vimeo
+
+We added an option for YouTube and Vimeo to add a splash image before loading the video.
+
+<img src="docs/video-2click.png" width="400">
 
 ### Analytics opt-out
 
