@@ -21,7 +21,7 @@ Extension developers can simply add informations to the overview page.
 
     // config.php
     $GLOBALS['TL_HOOKS']['addPrivacyWidget'][] = array('MyClass', 'myAddPrivacyWidget');
-
+    
     // MyClass.php
     public function myAddPrivacyWidget($arrWidgets)
     {
@@ -62,15 +62,19 @@ This project has been created and is maintained by [friends-of-contao](https://g
 
 [christianbarkowsky](https://github.com/christianbarkowsky) - [BRKWSKY](https://brkwsky.de) - donating code and ideas
 
-[davidmaack](https://github.com/davidmaack) - [MEN AT WORK Werbeagentur GmbH](https://www.men-at-work.de) - donating code and ideas
+[fritzmg](https://github.com/fritzmg) - [Wiesmüller & Gschwantner OG](https://www.inspiredminds.at) - donating code and ideas
 
 [MDevster](https://github.com/MDevster) - [pdir GmbH](https://pdir.de) - donating code and ideas
+
+[davidmaack](https://github.com/davidmaack) - [MEN AT WORK Werbeagentur GmbH](https://www.men-at-work.de) - donating code and ideas
 
 [leofeyer](https://github.com/leofeyer) - [Feyer Media GmbH & Co. KG](https://hostingwerk.de) - donating code and ideas
 
 [frontendschlampe](https://github.com/frontendschlampe) - [hofff.com](https://www.hofff.com) - donating ideas and management tasks
 
 [Pellinger](https://github.com/Pellinger) - [twobox.com](http://www.twobox.com) - donating 50 € net
+
+anonym - donating 100 € net
 
 If you want to extend the list, feel free to send us an [email](mailto:nick@hofff.com).
 
