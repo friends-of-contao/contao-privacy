@@ -1,11 +1,11 @@
 <?php
 
 /**
- * @copyright   Christian Barkowsky 2018 <https://brkwsky.de>
+ * @copyright   Friends of Contao 2018
  * @author      Fritz Michael Gschwantner <https://github.com/fritzmg>
  * @package     PrivacyConsentBundle
  * @license     LGPL-3.0-or-later
- * @see         https://github.com/christianbarkowsky/contao-privacyconsent-bundle
+ * @see         https://github.com/friends-of-contao/contao-privacy
  */
 
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
