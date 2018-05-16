@@ -12,7 +12,7 @@ We would be pleased, if you could help us with ideas, code snippets or maybe wit
 
 Adds a privacy policy consent checkbox to the registration
 
-![](docs/screenshot.png)
+![checkbox-registration](docs/checkbox-registration.png | width=150)
 
 ### Hook
 
