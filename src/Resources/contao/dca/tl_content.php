@@ -22,6 +22,15 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['videoSplash'] = array
     'sql'                     => "char(1) NOT NULL default ''"
 );
 
+$GLOBALS['TL_DCA']['tl_content']['fields']['youtubeNoCookie'] = array
+(
+    'label'                   => &$GLOBALS['TL_LANG']['tl_content']['youtubeNoCookie'],
+    'exclude'                 => true,
+    'inputType'               => 'checkbox',
+    'eval'                    => array('tl_class'=>'w50', 'tl_style'=>'height:auto;'),
+    'sql'                     => "char(1) NOT NULL default ''"
+);
+
 /**
  * Palettes
  */
@@ -29,6 +38,11 @@ PaletteManipulator::create()
     ->addField('videoSplash', 'player_legend', PaletteManipulator::POSITION_APPEND)
     ->applyToPalette('youtube', 'tl_content')
     ->applyToPalette('vimeo', 'tl_content');
+
+PaletteManipulator::create()
+    ->addField('youtubeNoCookie', 'player_legend', PaletteManipulator::POSITION_APPEND)
+    ->applyToPalette('youtube', 'tl_content');
+
 
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'videoSplash';
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['videoSplash'] = 'singleSRC,size';

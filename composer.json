@@ -4,6 +4,7 @@
   "keywords":["privacy", "Datenschutz", "DSGVO", "GDPR", "registration", "policy"],
   "type": "contao-bundle",
   "license": "LGPL-3.0-or-later",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "Christian Barkowsky",

@@ -24,38 +24,41 @@ class YouTube extends ContentYouTube
      */
     protected function compile()
     {
-        if ($this->videoSplash)
-        {
+        if ($this->videoSplash) {
             $imageSize = StringUtil::deserialize($this->size);
-            $objFile = FilesModel::findByUuid($this->singleSRC);
+            $objFile   = FilesModel::findByUuid($this->singleSRC);
 
-            if ($objFile !== null && \is_file(TL_ROOT . '/' . $objFile->path))
-            {
+            if ($objFile !== null && \is_file(TL_ROOT . '/' . $objFile->path)) {
                 $this->singleSRC = $objFile->path;
-                $objSplash = new \stdClass();
+                $objSplash       = new \stdClass();
                 $this->addImageToTemplate($objSplash, $this->arrData, null, null, $objFile);
                 $this->Template->splashImage = $objSplash;
-                $this->autoplay = true;
-            }
-            else
-            {
+                $this->autoplay              = true;
+            } else {
                 $this->videoSplash = false;
             }
         }
 
         $size = StringUtil::deserialize($this->playerSize);
 
-        if (!\is_array($size) || empty($size[0]) || empty($size[1]))
-        {
-            $this->Template->width = 640;
+        if (!\is_array($size) || empty($size[0]) || empty($size[1])) {
+            $this->Template->width  = 640;
             $this->Template->height = 360;
-        }
-        else
-        {
-            $this->Template->width = $size[0];
+        } else {
+            $this->Template->width  = $size[0];
             $this->Template->height = $size[1];
         }
 
-        parent::compile();
+        if ($this->youtubeNoCookie) {
+            $url = 'https://www.youtube-nocookie.com/embed/' . $this->youtube;
+        } else {
+            $url = 'https://www.youtube.com/embed/' . $this->youtube;
+        }
+
+        if ($this->autoplay) {
+            $url .= '?autoplay=1';
+        }
+
+        $this->Template->src = $url;
     }
 }
