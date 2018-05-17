@@ -11,4 +11,5 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_content']['videoSplash'] = ['Splash image', 'The video will be integrated only if the user clicks on a splash image.'];
+$GLOBALS['TL_LANG']['tl_content']['videoSplash']     = [ 'Splash image', 'The video will be integrated only if the user clicks on a splash image.' ];
+$GLOBALS['TL_LANG']['tl_content']['youtubeNoCookie'] = [ 'No Cookie - variant', 'The video will be embedded via https://youtube-nocookie.com/embed.' ];

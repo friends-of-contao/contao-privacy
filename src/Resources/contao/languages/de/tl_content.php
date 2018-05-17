@@ -11,4 +11,5 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_content']['videoSplash'] = ['Splash image', 'Das Video wird erst per iframe eingebunden wenn ein Splash image angeklickt wird.'];
+$GLOBALS['TL_LANG']['tl_content']['videoSplash']     = [ 'Splash image', 'Das Video wird erst per iframe eingebunden wenn ein Splash image angeklickt wird.' ];
+$GLOBALS['TL_LANG']['tl_content']['youtubeNoCookie'] = [ 'No Cookie - Variante', 'Das Video wird über https://youtube-nocookie.com/embed eingebunden.' ];
