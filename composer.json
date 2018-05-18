@@ -1,32 +1,44 @@
 {
-  "name": "christianbarkowsky/contao-privacyconsent-bundle",
+  "name": "friends-of-contao/contao-privacy2",
+  "version":"dev-master",
   "description": "Contao bundle that adds a privacy policy consent checkbox to the registration",
-  "keywords":["privacy", "Datenschutz", "DSGVO", "registration", "policy"],
-  "type": "contao-bundle",
-  "license": "LGPL-3.0+",
+  "keywords":["privacy", "Datenschutz", "DSGVO", "GDPR", "registration", "policy"],
+  "type": "contao-module",
+  "license": "LGPL-3.0-or-later",
   "authors": [
     {
-      "name": "Christian Barkowsky",
-      "homepage": "https://christianbarkowsky.de/"
+      "name": "David Maack",
+      "role": "Developer"
+    },
+    {
+      "name": "Nicky Hoff",
+      "homepage": "https://www.hofff.com",
+      "email": "nick@hofff.com",
+      "role": "Manager"
     }
   ],
   "support": {
-    "issues": "https://github.com/christianbarkowsky/contao-privacyconsent-bundle/issues",
-    "source": "https://github.com/christianbarkowsky/contao-privacyconsent-bundle"
+    "issues": "https://github.com/friends-of-contao/contao-privacy/issues",
+    "source": "https://github.com/friends-of-contao/contao-privacy"
   },
   "require": {
-    "php": "^7.0",
-    "contao/core-bundle": "^4.4"
+    "php": ">=5.5",
+    "contao/core-bundle":"~3.5 || ~4.2",
+    "contao-community-alliance/composer-plugin": "~2.4 || ~3.0"
   },
   "conflict": {
     "contao/manager-plugin": "<2.0 || >=3.0"
   },
   "autoload": {
     "psr-4": {
-      "Brkwsky\\PrivacyConsentBundle\\": "src"
+      "Foc\\ContaoPrivacyBundle\\": "src"
     }
   },
-  "extra": {
-    "contao-manager-plugin": "Brkwsky\\PrivacyConsentBundle\\ContaoManager\\Plugin"
+  "extra":{
+    "contao":{
+      "sources":{
+        "contao":"system/modules/contao-privacy"
+      }
+    }
   }
 }
