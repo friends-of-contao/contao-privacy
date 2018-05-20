@@ -2,7 +2,7 @@
   "name": "friends-of-contao/contao-privacy",
   "description": "Contao bundle that adds a privacy policy consent checkbox to the registration",
   "keywords":["privacy", "Datenschutz", "DSGVO", "GDPR", "registration", "policy"],
-  "type": "contao-bundle",
+  "type": "contao-module",
   "license": "LGPL-3.0-or-later",
   "authors": [
     {
@@ -32,18 +32,23 @@
     "source": "https://github.com/friends-of-contao/contao-privacy"
   },
   "require": {
-    "php": "^7.0",
-    "contao/core-bundle": "4.4.* || 4.5.*"
+    "php" : "^5.6 || ^7.0",
+    "contao/core" : "~3.5",
+    "contao-community-alliance/composer-plugin": "~2.0"
   },
   "conflict": {
     "contao/manager-plugin": "<2.0 || >=3.0"
   },
   "autoload": {
-    "psr-4": {
-      "Foc\\ContaoPrivacyBundle\\": "src"
+    "psr-0": {
+      "Foc\\": "src"
     }
   },
-  "extra": {
-    "contao-manager-plugin": "Foc\\ContaoPrivacyBundle\\ContaoManager\\Plugin"
+  "extra" : {
+    "contao" : {
+      "symlinks" : {
+        "src/Resources/contao" : "system/modules/contao-privacy"
+      }
+    }
   }
 }
