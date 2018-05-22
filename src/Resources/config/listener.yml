@@ -1,3 +1,0 @@
-services:
-    foc_privacy.listener.member_operation:
-      class: Foc\ContaoPrivacyBundle\EventListener\MemberListener

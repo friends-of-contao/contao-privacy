@@ -10,3 +10,4 @@
 
 $GLOBALS['TL_LANG']['tl_module']['deleteCookies'] = ['Cookies löschen', 'Alle Cookies dieser Domain werden während des Opt-out gelöscht.'];
 $GLOBALS['TL_LANG']['tl_module']['keepCookies'] = ['Cookies behalten', 'Die angegebenen Cookies werden ignoriert.'];
+$GLOBALS['TL_LANG']['tl_module']['focPrivacy'] = ['Datenschutz-Hinweis', 'Geben Sie den Datenschutz-Hinweis ein. Insert-Tags werden unterstützt.'];
