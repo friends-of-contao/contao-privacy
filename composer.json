@@ -47,7 +47,8 @@
   "extra" : {
     "contao" : {
       "symlinks" : {
-        "src/Resources/contao" : "system/modules/contao-privacy"
+        "src/Resources/contao" : "system/modules/contao-privacy",
+        "src/Resources/public" : "system/modules/contao-privacy/assets"
       }
     }
   }

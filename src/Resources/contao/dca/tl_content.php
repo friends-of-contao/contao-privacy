@@ -8,8 +8,6 @@
  * @see         https://github.com/friends-of-contao/contao-privacy
  */
 
-use Contao\CoreBundle\DataContainer\PaletteManipulator;
-
 /**
  * Fields
  */
@@ -34,15 +32,21 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['youtubeNoCookie'] = array
 /**
  * Palettes
  */
-PaletteManipulator::create()
-    ->addField('videoSplash', 'player_legend', PaletteManipulator::POSITION_APPEND)
-    ->applyToPalette('youtube', 'tl_content')
-    ->applyToPalette('vimeo', 'tl_content');
+$GLOBALS['TL_DCA']['tl_content']['palettes']['youtube'] = str_replace
+(
+    'playerSize',
+    'videoSplash,youtubeNoCookie,playerSize',
+    $GLOBALS['TL_DCA']['tl_content']['palettes']['youtube']
+);
 
-PaletteManipulator::create()
-    ->addField('youtubeNoCookie', 'player_legend', PaletteManipulator::POSITION_APPEND)
-    ->applyToPalette('youtube', 'tl_content');
-
+if($GLOBALS['TL_DCA']['tl_content']['palettes']['vimeo']) {
+    $GLOBALS['TL_DCA']['tl_content']['palettes']['vimeo'] = str_replace
+    (
+        'playerSize',
+        'videoSplash,youtubeNoCookie,playerSize',
+        $GLOBALS['TL_DCA']['tl_content']['palettes']['vimeo']
+    );
+}
 
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'videoSplash';
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['videoSplash'] = 'singleSRC,size';

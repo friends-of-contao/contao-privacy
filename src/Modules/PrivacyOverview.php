@@ -57,7 +57,16 @@ class PrivacyOverview extends \BackendModule
 
         /* sort array */
         usort($arrWidgets, function($a, $b) {
-            return $a['title'] <=> $b['title'];
+            if (strnatcmp(phpversion(),'7.0.0') >= 0)
+            {
+                return $a['title'] <=> $b['title'];
+            }
+            # for php 5.6
+            if ($a == $b) {
+                return 0;
+            }
+            return ($a < $b) ? -1 : 1;
+
         });
 
         $strWidgets = '';
