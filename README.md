@@ -60,6 +60,10 @@ if (!BE_USER_LOGGED_IN && !$this->hasAuthenticatedBackendUser() && !\Input::cook
 ```
 Optionally this module also allows you to remove all cookies for this domain, with the exception of some pre-defined cookies like the session cookie (if active) or a custom list of cookies to keep.
 
+### YouTube no-cookie
+
+Added a checkbox to the YouTube module to switch between standard and no-cookie embedment variant.
+
 ## Copyright
 
 This project has been created and is maintained by [friends-of-contao](https://github.com/friends-of-contao)
