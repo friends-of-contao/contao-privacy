@@ -10,4 +10,5 @@
 
 $GLOBALS['TL_LANG']['tl_module']['deleteCookies'] = ['Delete cookies', 'All cookies of this domain are deleted during opt-out.'];
 $GLOBALS['TL_LANG']['tl_module']['keepCookies'] = ['Keep cookies', 'These cookies are ignored during deletion.'];
+$GLOBALS['TL_LANG']['tl_module']['focPrivacyLabel'] = ['Privacy policy label', 'Please add your privacy policy label.'];
 $GLOBALS['TL_LANG']['tl_module']['focPrivacy'] = ['Privacy policy', 'Please add your privacy policy. Insert-Tags are supported.'];
