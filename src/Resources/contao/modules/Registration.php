@@ -56,7 +56,7 @@ class Registration extends ModuleRegistration
             return $objTemplate->parse();
         }
 
-        $this->editable = StringUtil::deserialize($this->editable);
+        $this->editable = deserialize($this->editable);
 
         // Return if there are no editable fields
         if (empty($this->editable) || !\is_array($this->editable)) {
