@@ -25,7 +25,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['keepCookies'] = array
     'label'                   => &$GLOBALS['TL_LANG']['tl_module']['keepCookies'],
     'exclude'                 => true,
     'inputType'               => 'listWizard',
-    'eval'                    => array('tl_class'=>'clr w50'),
+    'eval'                    => array('tl_class'=>'w50'),
     'sql'                     => "blob NULL"
 );
 

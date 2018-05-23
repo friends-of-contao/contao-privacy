@@ -37,3 +37,8 @@ $GLOBALS['FE_MOD']['miscellaneous']['analyticsOptOut'] = 'Foc\ContaoPrivacyBundl
  */
 $GLOBALS['TL_CTE']['media']['youtube'] = 'Foc\ContaoPrivacyBundle\Elements\YouTube';
 $GLOBALS['TL_CTE']['media']['vimeo'] = 'Foc\ContaoPrivacyBundle\Elements\Vimeo';
+
+/**
+ * Activate the crons
+ */
+$GLOBALS['TL_CRON']['daily'][]      = array('Foc\ContaoPrivacyBundle\Cron\Automator', 'cleanupLogfiles');
