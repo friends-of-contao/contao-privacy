@@ -86,5 +86,9 @@ This project has been created and is maintained by [friends-of-contao](https://g
 
 anonym - donating 100 € net
 
+Manuel Mederer - [VILINGO](https://vilingo.com) - donating 50 € net
+
+Julia Hauser - [Jumedia Webagentur GmbH](https://www.jumedia.ch) - donating 100 € net
+
 If you want to extend the list, feel free to send us an [email](mailto:nick@hofff.com).
 
