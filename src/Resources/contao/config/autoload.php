@@ -1,23 +1,12 @@
 <?php
 
-/*
- * This file is part of Contao.
- *
- * (c) Leo Feyer
- *
- * @license LGPL-3.0-or-later
- */
-
-
 /**
  * Register the classes
  */
 ClassLoader::addClasses(array
 (
-    // Modules
-	//'Contao\ModuleCalendar'      => 'system/modules/contao-privacy/modules/ModuleCalendar.php',
+	'Foc\ContaoPrivacyBundle\Modules\Registration'      => 'system/modules/contao-privacy/modules/Registration.php',
 ));
-
 
 /**
  * Register the templates
@@ -25,5 +14,4 @@ ClassLoader::addClasses(array
 TemplateLoader::addFiles(array
 (
 	'form_checkbox_foc'        => 'system/modules/contao-privacy/templates',
-
 ));
