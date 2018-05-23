@@ -8,11 +8,11 @@ We would be pleased, if you could help us with ideas, code snippets or maybe wit
 
 ## Integrations
 
-### Privacy Policy checkbox for registration
+### New registration module (GDPR)
 
-Adds a privacy policy consent checkbox to the registration
+Adds a privacy policy consent registration module with checkbox and individual legend and label text.
 
-<img src="docs/checkbox-registration.png" width="400">
+<img src="docs/checkbox-registration.png" width="250"> <img src="docs/checkbox-registration_fe.png" width="250">
 
 ### Hook
 
