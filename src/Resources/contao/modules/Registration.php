@@ -330,7 +330,7 @@ class Registration extends ModuleRegistration
 
         $this->Template->categories = $arrGroups;
         $this->Template->formId = $strFormId;
-        $this->Template->slabel = StringUtil::specialchars($GLOBALS['TL_LANG']['MSC']['register']);
+        $this->Template->slabel = specialchars($GLOBALS['TL_LANG']['MSC']['register']);
         $this->Template->action = Environment::get('indexFreeRequest');
 
         // Deprecated since Contao 4.0, to be removed in Contao 5.0
