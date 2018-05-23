@@ -205,6 +205,7 @@ class Registration extends ModuleRegistration
 
             // DSGVO checkbox
             if ($objWidget instanceof FormCheckBox && 'privacyConsent' == $objWidget->name) {
+                $objWidget->template = 'form_checkbox_foc';
                 $objWidget->label = $this->focPrivacy;
 
                 $arrOption[] = [
