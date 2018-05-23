@@ -29,14 +29,6 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['keepCookies'] = array
     'sql'                     => "blob NULL"
 );
 
-$GLOBALS['TL_DCA']['tl_module']['fields']['focPrivacyLabel'] = [
-    'label'       => &$GLOBALS['TL_LANG']['tl_module']['focPrivacyLabel'],
-    'exclude'     => true,
-    'inputType'   => 'text',
-    'eval'        => ['decodeEntities'=>true, 'maxlength'=>255],
-    'sql'         => "varchar(255) NOT NULL default ''",
-];
-
 $GLOBALS['TL_DCA']['tl_module']['fields']['focPrivacy'] = [
     'label'       => &$GLOBALS['TL_LANG']['tl_module']['focPrivacy'],
     'exclude'     => true,
@@ -46,10 +38,18 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['focPrivacy'] = [
     'sql'         => "text NULL",
 ];
 
+$GLOBALS['TL_DCA']['tl_module']['fields']['focPrivacyLabel'] = [
+    'label'       => &$GLOBALS['TL_LANG']['tl_module']['focPrivacyLabel'],
+    'exclude'     => true,
+    'inputType'   => 'text',
+    'eval'        => ['mandatory'=>true, 'decodeEntities'=>true, 'maxlength'=>255],
+    'sql'         => "varchar(255) NOT NULL default ''",
+];
+
 /**
  * Palettes
  */
 $GLOBALS['TL_DCA']['tl_module']['palettes']['__selector__'][] = 'deleteCookies';
 $GLOBALS['TL_DCA']['tl_module']['subpalettes']['deleteCookies'] = 'keepCookies';
 $GLOBALS['TL_DCA']['tl_module']['palettes']['analyticsOptOut'] = '{title_legend},name,headline,type;{config_legend},deleteCookies;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID';
-$GLOBALS['TL_DCA']['tl_module']['palettes']['focRegistration'] = '{title_legend},name,headline,type;{config_legend},editable,newsletters,disableCaptcha,focPrivacyLabel,focPrivacy;{account_legend},reg_groups,reg_allowLogin,reg_assignDir;{redirect_legend},jumpTo;{email_legend:hide},reg_activate;{template_legend:hide},memberTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['focRegistration'] = '{title_legend},name,headline,type;{config_legend},editable,newsletters,disableCaptcha,focPrivacy,focPrivacyLabel;{account_legend},reg_groups,reg_allowLogin,reg_assignDir;{redirect_legend},jumpTo;{email_legend:hide},reg_activate;{template_legend:hide},memberTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID';
