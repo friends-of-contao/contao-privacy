@@ -9,11 +9,6 @@
  */
 
 /**
- * Config
- */
-$GLOBALS['TL_DCA']['tl_member']['config']['onload_callback'][] = array('foc_privacy.listener.member_operation', 'onLoad');
-
-/**
  * Fields
  */
 $GLOBALS['TL_DCA']['tl_member']['fields']['privacyConsent'] = array
