@@ -24,8 +24,6 @@ use Contao\BackendTemplate;
 use Contao\FrontendTemplate;
 use Contao\ModuleRegistration;
 
-use Patchwork\Utf8;
-
 /**
  * Class Registration
  * @package Foc\ContaoPrivacyBundle\Modules
@@ -49,7 +47,7 @@ class Registration extends ModuleRegistration
             /** @var BackendTemplate|object $objTemplate */
             $objTemplate = new BackendTemplate('be_wildcard');
 
-            $objTemplate->wildcard = '### ' . Utf8::strtoupper($GLOBALS['TL_LANG']['FMD']['focRegistration'][0]) . ' ###';
+            $objTemplate->wildcard = '### ' . utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['focRegistration'][0]) . ' ###';
             $objTemplate->title = $this->headline;
             $objTemplate->id = $this->id;
             $objTemplate->link = $this->name;
