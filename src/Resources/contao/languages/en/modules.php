@@ -5,3 +5,4 @@ $GLOBALS['TL_LANG']['MOD']['focPrivacyOverview'][0]   = "Privacy Overview";
 $GLOBALS['TL_LANG']['MOD']['focPrivacyOverview'][1]   = "Here you can see a overview of your privacy settings";
 $GLOBALS['TL_LANG']['FMD']['analyticsOptOut'] = ['Analytics opt-out', 'Provides an opt-out/in button for analytics templates.'];
 $GLOBALS['TL_LANG']['FMD']['focRegistration'] = ['Registration (DSGVO)', 'Generates a user registration form'];
+$GLOBALS['TL_LANG']['FMD']['focSubscribe'] = ['Subscribe (DSGVO)', 'Generates a form to subscribe to one or more channels'];
