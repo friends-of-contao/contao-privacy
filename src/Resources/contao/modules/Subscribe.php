@@ -12,12 +12,8 @@
 
 namespace Foc\ContaoPrivacyBundle\Modules;
 
-use Contao\Input;
-use Contao\Environment;
 use Contao\BackendTemplate;
 use Contao\ModuleSubscribe;
-use Contao\FrontendTemplate;
-use Contao\NewsletterChannelModel;
 
 /**
  * Class ModuleSubscribe
@@ -67,65 +63,7 @@ class Subscribe extends ModuleSubscribe
 	 */
 	protected function compile()
 	{
-		// Overwrite default template
-		if ($this->nl_template) {
-			/** @var \FrontendTemplate|object $objTemplate */
-			$objTemplate = new FrontendTemplate($this->nl_template);
-
-			$this->Template = $objTemplate;
-			$this->Template->setData($this->arrData);
-		}
-
-		// Activate e-mail address
-		if (Input::get('token')) {
-			$this->activateRecipient();
-
-			return;
-		}
-
-		// Subscribe
-		if (Input::post('FORM_SUBMIT') == 'tl_subscribe') {
-			$this->addRecipient();
-		}
-
-		$blnHasError = false;
-
-		// Error message
-		if (strlen($_SESSION['SUBSCRIBE_ERROR'])) {
-			$blnHasError  = true;
-			$this->Template->mclass = 'error';
-			$this->Template->message = $_SESSION['SUBSCRIBE_ERROR'];
-			$_SESSION['SUBSCRIBE_ERROR'] = '';
-		}
-
-		// Confirmation message
-		if (strlen($_SESSION['SUBSCRIBE_CONFIRM'])) {
-			$this->Template->mclass = 'confirm';
-			$this->Template->message = $_SESSION['SUBSCRIBE_CONFIRM'];
-			$_SESSION['SUBSCRIBE_CONFIRM'] = '';
-		}
-
-		$arrChannels = array();
-		$objChannel = NewsletterChannelModel::findByIds($this->nl_channels);
-
-		// Get the titles
-		if ($objChannel !== null) {
-			while ($objChannel->next()) {
-				$arrChannels[$objChannel->id] = $objChannel->title;
-			}
-		}
-
-		// Default template variables
-		$this->Template->email = '';
-		$this->Template->channels = $arrChannels;
-		$this->Template->showChannels = !$this->nl_hideChannels;
-		$this->Template->submit = specialchars($GLOBALS['TL_LANG']['MSC']['subscribe']);
-		$this->Template->channelsLabel = $GLOBALS['TL_LANG']['MSC']['nl_channels'];
-		$this->Template->emailLabel = $GLOBALS['TL_LANG']['MSC']['emailAddress'];
-		$this->Template->action = Environment::get('indexFreeRequest');
-		$this->Template->formId = 'tl_subscribe';
-		$this->Template->id = $this->id;
-		$this->Template->hasError = $blnHasError;
+        parent::compile();
 
         // DSGVO checkbox
         $this->Template->focPrivacy = $this->focPrivacy;
