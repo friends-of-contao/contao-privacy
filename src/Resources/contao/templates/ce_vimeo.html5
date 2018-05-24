@@ -11,8 +11,8 @@
       document.getElementById('videoSplash<?= $this->id ?>').addEventListener('click', function(e) {
         var iframe = document.createElement('iframe');
         iframe.src = this.dataset['video'];
-        iframe.width = <?= $this->width; ?>;
-        iframe.height = <?= $this->height; ?>;
+        iframe.width = <?= $this->width ?>;
+        iframe.height = <?= $this->height ?>;
         iframe.allowfullscreen = '';
         this.parentNode.replaceChild(iframe, this);
       });

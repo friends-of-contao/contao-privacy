@@ -35,7 +35,6 @@ class Vimeo extends ContentVimeo
                 $objSplash = new \stdClass();
                 $this->addImageToTemplate($objSplash, $this->arrData, null, null, $objFile);
                 $this->Template->splashImage = $objSplash;
-                $this->autoplay = true;
             }
             else
             {
