@@ -29,6 +29,14 @@
         </div>
       <?php endif; ?>
 
+        <fieldset id="ctrl_privacyConsent" class="checkbox_container mandatory">
+        <legend>
+            <?= $this->focPrivacy ?>
+        </legend>
+        <input name="privacyConsent" value="" type="hidden">
+            <span><input name="privacyConsent" id="opt_privacyConsent_0" class="checkbox" value="" required="" type="checkbox"> <label id="lbl_privacyConsent_0" for="opt_privacyConsent_0" class="mandatory"><span class="invisible"><?= $this->mandatoryField ?> </span><?= $this->focPrivacyLabel ?><span class="mandatory">*</span></label></span>
+        </fieldset>
+
       <input type="submit" name="submit" class="submit" value="<?= $this->submit ?>">
 
     </div>
