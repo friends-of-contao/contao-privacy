@@ -10,7 +10,7 @@ We would be pleased, if you could help us with ideas, code snippets or maybe wit
 
 ### New registration module (GDPR)
 
-Adds a privacy policy consent registration module with checkbox and individual legend and label text.
+Adds a privacy policy consent registration module with checkbox and individual legend and label text. _Please Note: You'll need to check the checkbox at editble fields additionally otherwise the text is not visible at the module in the front end._
 
 <img src="docs/checkbox-registration.png" width="250"> <img src="docs/checkbox-registration_fe.png" width="250">
 
