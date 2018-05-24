@@ -15,6 +15,7 @@ namespace Foc\ContaoPrivacyBundle\Modules;
 use Contao\Input;
 use Contao\Environment;
 use Contao\BackendTemplate;
+use Contao\ModuleSubscribe;
 use Contao\FrontendTemplate;
 use Contao\NewsletterChannelModel;
 
@@ -22,7 +23,7 @@ use Contao\NewsletterChannelModel;
  * Class ModuleSubscribe
  * @package Foc\ContaoPrivacyBundle\Modules
  */
-class ModuleSubscribe extends \Module
+class Subscribe extends ModuleSubscribe
 {
 
 	/**
