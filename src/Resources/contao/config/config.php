@@ -32,6 +32,7 @@ array_insert($GLOBALS['BE_MOD']['foc'], 0, array
  */
 $GLOBALS['FE_MOD']['miscellaneous']['analyticsOptOut'] = 'Foc\ContaoPrivacyBundle\Modules\AnalyticsOptOut';
 $GLOBALS['FE_MOD']['user']['focRegistration'] = 'Foc\ContaoPrivacyBundle\Modules\Registration';
+$GLOBALS['FE_MOD']['newsletter']['focSubscribe'] = 'Foc\ContaoPrivacyBundle\Modules\Subscribe';
 
 /**
  * Content elements
