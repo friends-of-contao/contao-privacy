@@ -49,7 +49,7 @@
       "symlinks" : {
         "src/Resources/contao" : "system/modules/contao-privacy",
         "src/Resources/public" : "system/modules/contao-privacy/assets",
-        "src/Resources/template/be" : "system/modules/core/templates/privacy"
+        "src/Resources/templates/be" : "system/modules/core/templates/privacy"
       }
     }
   }
