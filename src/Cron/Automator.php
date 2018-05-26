@@ -24,25 +24,25 @@ class Automator
         }
 
         // get the current timestamp
-        $date = time();
+        $time = time();
 
         // subtract the days configured in the settings
-        $date = (\Config::get('foc_logfile_cleanup_interval') * 86400);
+        $date = $time - (\Config::get('foc_logfile_cleanup_interval') * 86400);
 
-        $arrFiles = preg_grep('/\.log$/', scan(TL_ROOT . '/system/logs'));
+        $arrFiles = preg_grep('/\.log(.*?)$/', scan(TL_ROOT . '/system/logs'));
 
         foreach ($arrFiles as $strFile)
         {
             $objFile = new \File('system/logs/' . $strFile);
 
             // Delete older files
-            if ($objFile->exists() && $objFile->mtime < $date)
+            if ($objFile->exists() && $objFile->ctime < $date)
             {
                 $objFile->delete();
             }
         }
 
         // Add a log entry
-        $this->log('Cleanup logfiles', __METHOD__, TL_CRON);
+        \System::log('Cleanup logfiles', __METHOD__, TL_CRON);
     }
 }
