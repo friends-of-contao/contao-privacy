@@ -10,8 +10,6 @@
 
 namespace Foc\ContaoPrivacyBundle\Cron;
 
-use Contao\FrontendCron;
-
 class Automator
 {
 

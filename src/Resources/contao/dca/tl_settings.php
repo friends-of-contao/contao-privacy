@@ -19,7 +19,10 @@ $GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] .= ';{foc_privacy_legen
 $GLOBALS['TL_DCA']['tl_settings']['fields']['foc_logfile_cleanup'] = array(
     'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['foc_logfile_cleanup'],
     'inputType'               => 'checkbox',
-    'eval'                    => array('submitOnChange'=>true),
+    'eval'                    => array(
+        'submitOnChange'=>true,
+        'tl_class'     => 'w50'
+    ),
     'sql'                     => "char(1) NOT NULL default ''"
 );
 

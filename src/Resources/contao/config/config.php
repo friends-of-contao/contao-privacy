@@ -41,4 +41,4 @@ $GLOBALS['TL_CTE']['media']['vimeo'] = 'Foc\ContaoPrivacyBundle\Elements\Vimeo';
 /**
  * Activate the crons
  */
-$GLOBALS['TL_CRON']['daily'][]      = array('Foc\ContaoPrivacyBundle\Cron\Automator', 'cleanupLogfiles');
+$GLOBALS['TL_CRON']['daily'][] = array('Foc\ContaoPrivacyBundle\Cron\Automator', 'cleanupLogfiles');

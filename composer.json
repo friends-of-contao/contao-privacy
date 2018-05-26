@@ -40,8 +40,8 @@
     "contao/manager-plugin": "<2.0 || >=3.0"
   },
   "autoload": {
-    "psr-0": {
-      "Foc\\": "src"
+    "psr-4": {
+      "Foc\\ContaoPrivacyBundle\\": "src"
     }
   },
   "extra" : {
