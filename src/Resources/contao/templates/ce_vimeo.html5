@@ -13,7 +13,7 @@
         iframe.src = this.dataset['video'];
         iframe.width = <?= $this->width ?>;
         iframe.height = <?= $this->height ?>;
-        iframe.allowfullscreen = '';
+        iframe.setAttribute('allowfullscreen', '');
         this.parentNode.replaceChild(iframe, this);
       });
     </script>
