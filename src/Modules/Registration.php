@@ -211,7 +211,7 @@ class Registration extends ModuleRegistration
                 $arrOption[] = [
                     'type'      => 'option',
                     'label'     => $this->focPrivacyLabel,
-                    'value'     => ''
+                    'value'     => 'privacyConsent'
                 ];
 
                 $objWidget->options  = $arrOption;
