@@ -15,5 +15,6 @@ ClassLoader::addClasses(array
 TemplateLoader::addFiles(array
 (
 	'form_checkbox_foc'        => 'system/modules/contao-privacy/templates',
+	'mod_comment_form'         => 'system/modules/contao-privacy/templates',
 	'nl_default_foc'           => 'system/modules/contao-privacy/templates',
 ));
