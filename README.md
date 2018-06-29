@@ -60,6 +60,13 @@ if (!BE_USER_LOGGED_IN && !$this->hasAuthenticatedBackendUser() && !\Input::cook
 ```
 Optionally this module also allows you to remove all cookies for this domain, with the exception of some pre-defined cookies like the session cookie (if active) or a custom list of cookies to keep.
 
+### Comments
+
+A privacy consent checkbox is added to the comment form. This can be enabled and configured for each root page.
+**In Contao 3.5 the core file `system/modules/comments/classes/Comments.php` will be overridden by this extension.
+This is necessary, because Contao 3.5 is in security fixes only state and the required changes for this feature to work
+won't get patched in. When you uninstall this extension, this file has to be restored manually.**
+
 ## Copyright
 
 This project has been created and is maintained by [friends-of-contao](https://github.com/friends-of-contao)

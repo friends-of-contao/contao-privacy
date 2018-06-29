@@ -254,12 +254,14 @@ class Comments extends \Frontend
 			'options'   => array(1=>$GLOBALS['TL_LANG']['MSC']['com_notify'])
 		);
 
-		if ($GLOBALS['objPage'] && $GLOBALS['objPage']->focPrivacyComments) {
+		$rootPage = $GLOBALS['objPage'] ? \PageModel::findByPk($GLOBALS['objPage']->rootId) : null;
+		if ($rootPage && $rootPage->focPrivacyComments)
+		{
 			$arrFields['focPrivacyComments'] = [
 				'name'      => 'focPrivacyComments',
-				'label'     => $GLOBALS['objPage']->focPrivacyCommentsExplanation,
+				'label'     => $rootPage->focPrivacyCommentsExplanation,
 				'inputType' => 'checkbox',
-				'options'   => [1 => $GLOBALS['objPage']->focPrivacyCommentsLabel],
+				'options'   => [1 => $rootPage->focPrivacyCommentsLabel],
 				'eval'      => ['mandatory' => true, 'template' => 'form_checkbox_foc'],
 			];
 		}
