@@ -33,7 +33,7 @@
   },
   "require": {
     "php": "^7.0",
-    "contao/core-bundle": "4.4.* || 4.5.*"
+    "contao/core-bundle": ">=4.4,<4.7"
   },
   "conflict": {
     "contao/manager-plugin": "<2.0 || >=3.0"
