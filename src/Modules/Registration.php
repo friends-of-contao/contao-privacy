@@ -281,7 +281,11 @@ class Registration extends ModuleRegistration
                     }
 
                     // Set the new value
-                    $arrUser[$field] = $varValue;
+                    if ('privacyConsent' == $varValue) {
+                        $arrUser[$field] = 1;
+                    } else {
+                        $arrUser[$field] = $varValue;
+                    }
                 }
             }
 
