@@ -8,6 +8,6 @@
  * @see         https://github.com/christianbarkowsky/contao-privacyconsent-bundle
  */
 
-$GLOBALS['TL_LANG']['privacyConsent'] = ['Privacy policy', 'Sì, accetto l'informativa sulla privacy e i termini e le condizioni.'];
+$GLOBALS['TL_LANG']['privacyConsent'] = ['Privacy policy', 'Sì, accetto l\'informativa sulla privacy e i termini e le condizioni.'];
 $GLOBALS['TL_LANG']['MSC']['analyticsOptOut'] = 'Opt-out';
 $GLOBALS['TL_LANG']['MSC']['analyticsOptIn'] = 'Opt-in';
