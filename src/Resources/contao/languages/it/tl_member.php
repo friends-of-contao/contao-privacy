@@ -11,4 +11,4 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_member']['privacyConsent'] = ['Provacy Checkbox', '-'];
+$GLOBALS['TL_LANG']['tl_member']['privacyConsent'] = ['Privacy Checkbox', '-'];
