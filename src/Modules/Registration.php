@@ -157,11 +157,13 @@ class Registration extends ModuleRegistration
         $objMember = null;
 
         // Check for a follow-up registration (see #7992)
+        /*
         if (Input::post('email', true) != '' && ($objMember = MemberModel::findUnactivatedByEmail(Input::post('email', true))) !== null) {
             $this->resendActivationMail($objMember);
 
             return;
         }
+        */
 
         $arrUser = array();
         $arrFields = array();
