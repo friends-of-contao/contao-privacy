@@ -13,13 +13,14 @@
 namespace Foc\ContaoPrivacyBundle\Modules;
 
 use Contao\Date;
-use Contao\FormCheckBox;
 use Contao\Input;
 use Contao\System;
 use Contao\Database;
 use Contao\Encryption;
 use Contao\StringUtil;
+use Contao\MemberModel;
 use Contao\Environment;
+use Contao\FormCheckBox;
 use Contao\BackendTemplate;
 use Contao\FrontendTemplate;
 use Contao\ModuleRegistration;
@@ -156,7 +157,7 @@ class Registration extends ModuleRegistration
         $objMember = null;
 
         // Check for a follow-up registration (see #7992)
-        if (Input::post('email', true) != '' && ($objMember = \MemberModel::findUnactivatedByEmail(Input::post('email', true))) !== null) {
+        if (Input::post('email', true) != '' && ($objMember = MemberModel::findUnactivatedByEmail(Input::post('email', true))) !== null) {
             $this->resendActivationMail($objMember);
 
             return;
@@ -209,7 +210,7 @@ class Registration extends ModuleRegistration
                 $arrOption[] = [
                     'type'      => 'option',
                     'label'     => $this->focPrivacyLabel,
-                    'value'     => ''
+                    'value'     => 'privacyConsent'
                 ];
 
                 $objWidget->options  = $arrOption;
