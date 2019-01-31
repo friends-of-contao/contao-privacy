@@ -6,6 +6,15 @@ This extension provides some privacy features to Contao 3.5.x and 4.4.x (4.5.x).
 
 We would be pleased, if you could help us with ideas, code snippets or maybe with a small sum of money (> 50 € net). You also can join the project for active working on the features. Please send us an [email](mailto:nick@hofff.com) if you want to help us.
 
+## Install
+Contao Manager: search the package name `friends-of-contao/contao-privacy` and select it, change the dependency to `^2.0@beta` and install
+
+Composer:
+
+```php web/contao-manager.phar.php composer require friends-of-contao/contao-privacy:^2.0@beta```
+
+Don't forget to update the database with the install tool!
+
 ## Integrations
 
 ### New registration module (GDPR)
