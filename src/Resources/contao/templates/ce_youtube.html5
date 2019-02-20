@@ -18,7 +18,7 @@
       });
     </script>
   <?php else: ?>
-    <iframe<?= $this->size ?> src="<?= $this->src ?>" allowfullscreen></iframe>
+    <iframe width="<?= $this->width ?>" height="<?= $this->height ?>" src="<?= $this->src ?>" allowfullscreen></iframe>
   <?php endif; ?>
 
 <?php $this->endblock(); ?>
