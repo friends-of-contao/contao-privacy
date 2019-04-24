@@ -3,7 +3,7 @@
 /**
  * Registration for ContaoPrivacy
  *
- * @copyright   Friends of Contao 2018
+ * @copyright   Friends of Contao 2018-2019
  * @author      Christian Barkowsky <https://brkwsky.de>
  * @package     ContaoPrivacy
  * @license     LGPL-3.0+
@@ -93,7 +93,7 @@ class Registration extends ModuleRegistration
         }
 
         // Activate account
-        if (strncmp(Input::get('token'), 'RG', 2) === 0) {
+        if (Input::get('token') != '') {
             $this->activateAcount();
 
             return;
